@@ -6,12 +6,15 @@
 }
 
 body{
-    background-color: rgb(236, 231, 231);
+    background-color: whitesmoke;
     min-height: 100vh;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+}
 nav{
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: white;
     box-shadow: 10px 10px 10px 10px #ccc;
     display: flex;
@@ -21,6 +24,12 @@ nav{
 
 nav div{
     position: relative;
+}
+.logo{
+   font-family: 'Tangerine';
+   font-weight: bold;
+   font-size: 1.7rem;
+   
 }
 
 nav img{
@@ -43,39 +52,98 @@ nav div span{
 
 main{
     padding: 1rem;
+    padding-bottom: 5rem;
 }
 
 main h1{
     text-align: center;
-    margin: 1rem;
+    margin: 3rem;
 }
 
 main section{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    
 }
 
 main section div.card{
-    background-color: white;
-    box-shadow: 10px 10px 10px 10px #ccc;
-    width: 20%;
+    background-color: f6f9fe;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    width: 80%;
+    height: 80%;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
     margin: 1rem;
+    border-radius: 25px;
 }
 
 div.card img{
     width: 100%;
+    height: 65%;
+    background-size:auto;
+    border-radius: 25px 25px 0px 0px;
 }
 
 div.card h3, div.card p{
-    margin: .5rem;
+  font-size: 80%;
+}
+
+
+div.card button{
+    width: 60%;
+    height: 14%;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    background-color: rgb(29, 29, 255);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+@media (min-width: 768px) {
+    .logo{
+        font-size: 2.5rem;
+    }
+    main section{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        
+    }
+    main h1{
+        text-align: center;
+        margin: 4rem;
+    }
+    main section div.card{
+        width: 70%;
+        height: 80%;
+        transition: all 0.4s linear;
+    }
+    main section div.card:hover{
+        transform: scale(1.1);
+        box-shadow: 0 20px 38px rgba(0, 0, 0, 0.25), 0 30px 40px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: all 0.4s linear;
+       
+    }
+div.card img{
+    transition: .3s ease-in-out; 
+}
+    
+div.card img:hover{
+    -webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
 }
 
 div.card button{
-    width: 75%;
-    padding: .5rem 1rem;
-    background-color: darkblue;
-    color: white;
+    transition: 0.3s linear all;
+}
+div.card button:hover{
+    background-color: rgba(45, 45, 255, 0.637);
+    transition: 0.3s linear all;
+    cursor: pointer;
+    
+}
 }

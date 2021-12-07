@@ -3,47 +3,43 @@ const listaProductos = [
     {
         precio: 20,
         title: "Helado",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://arcorencasa.com/wp-content/uploads/2020/10/20210730-11348.jpg"
     },
     {
         precio: 15,
         title: "Chocolate",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://cdn.thomasnet.com/insights-images/ad707688-8401-4fe6-9dcd-f5714f98867f/750px.png"
     },
     {
         precio: 150,
         title: "Pizza",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://live.mrf.io/statics/i/ps/irecetasfaciles.com/wp-content/uploads/2019/01/pizza-con-salami-chorizo-beacon.jpg?width=1200&enable=upscale"
     },
     {
         precio: 75,
         title: "Yogurth",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://tiendasneto.com.mx/media/catalog/product/cache/cb1e6b076f68ee0ac6e5e542f63310fa/5/0/5010003159-1_14.jpg"
     },
     {
         precio: 35,
         title: "Caramelos",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://www.consumoteca.com/wp-content/uploads/Gominolas-de-colores.jpg"
     },
     {
         precio: 100,
         title: "Vino",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://www.oregonlive.com/resizer/3bG0LURzUofqN1aT6YjIUUXacs8=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/37BXFDH3HBDK7NUISV3ZDONLMI.jpg"
     },
     {
         precio: 750,
         title: "Caja de dulces",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://gologuinda.com/wp-content/uploads/2020/10/20201024_122230.jpg"
     },
-    {
-        precio: 40,
-        title: "Pan integral",
-        imgURL: "https://picsum.photos/200/300"
-    },
+
     {
         precio: 200,
         title: "Pastel",
-        imgURL: "https://picsum.photos/200/300"
+        imgURL: "https://i.blogs.es/4d76ad/pastel-tres-leches/840_560.jpg"
     }
 ]
 let section = document.querySelector("section")
