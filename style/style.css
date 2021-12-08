@@ -131,35 +131,39 @@ div.card button{
 }
 .cart-header{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: .8rem;
     color: #333;
 }
 .cart-column{
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-bottom: 1px solid black;
-    margin-right: 1.5em;
+    margin-right: 1em;
     padding-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .cart-row{
     display: flex;
+    padding: 2px;
 }
 .cart-item{
-width: 45%;
+width: 50%;
+font-size: .8rem;
 }
 .cart-price{
-width: 20%;
-font-size: 1.2em;
+width: 30%;
+font-size: .8rem;
 color: #333;
 }
 .cart-quantity{
-width: 35%;
+width: 30%;
 }
 .cart-item-title{
     color: #333;
     margin-left: .5em;
-    font-size: 1.2em;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 .cart-item-image{
     width: 75px;
@@ -173,6 +177,8 @@ width: 35%;
     border-radius: .3em;
     font-weight: bold;
     padding: 10px;
+    margin: 10px;
+    font-size: .5rem;
 }
 .btn-danger:hover{
     background-color:rgba(252, 5, 5, 0.918);
@@ -188,7 +194,7 @@ width: 35%;
    padding: 0;
    text-align: center;
    font-size: 1em;
-   margin-right: 25px;
+   
 
 }
 .cart-row:last-child{
@@ -204,13 +210,13 @@ width: 35%;
 }
 .cart-total-title{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: black;
     margin-right: 20px;
 }
 .cart-total-price{
     color: #333;
-    font-size: 1.1em;
+    font-size: 1rem;
     
 }
 .btn-purchase{
@@ -270,9 +276,67 @@ div.card button{
     transition: 0.3s linear all;
 }
 div.card button:hover{
-    background-color: rgba(255, 45, 45, 0.637);
+    background-color: rgb(255, 10, 10);
     transition: 0.3s linear all;
     cursor: pointer;
     
 }
+.container{
+    display: block;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    padding-left: 30px;
+}
+.cart-column{
+    flex-direction: row;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  
+}
+.cart-row{
+    display: flex;
+    padding: 0;
+    margin: 0;
+   
+}
+.cart-item{
+width: 40%;
+font-size: inherit;
+}
+.cart-price{
+width: 25%;
+font-size: 1em;
+margin-top:0;
+margin-left: 2rem;
+}
+.cart-quantity{
+width: 30%;
+}
+.cart-item-title{
+   font-size: 1em;
+   margin-top: 0;
+}
+
+.btn-danger{
+    font-size: .8rem;
+}
+.btn-danger:hover{
+    background-color:rgba(252, 5, 5, 0.918);
+}
+
+.cart-total-title{
+    font-size: 1em;
+}
+.cart-total-price{
+    font-size: 1em;
+    
+}
+
+.btn-purchase:hover{
+    background-color:rgba(252, 5, 5, 0.918);
+}
+
 }
